@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+#campus-map {
+    width: 1000px; /* Adjust based on your map size */
+    height: 500px;
+    display: block;
+}
+
+#route-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px; /* Same as map */
+    height: 500px;
+    pointer-events: none; /* Allows clicks to pass through */
+}
