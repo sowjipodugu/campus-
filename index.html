@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Navigation System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Campus Navigation System</h2>
+
+    <div class="controls">
+        <label for="start">Start:</label>
+        <select id="start">
+            <option value="">Select Start</option>
+            <option value="main-gate">Main Gate</option>
+            <option value="a-block">A-Block</option>
+            <option value="b-block">B-Block</option>
+            <option value="c-block">C-Block</option>
+            <option value="canteen">Canteen</option>
+            <option value="auditorium">Auditorium</option>
+            <option value="boys-hostel">Boys Hostel</option>
+            <option value="girls-hostel">Girls Hostel</option>
+            <option value="admin-block">Admin Block</option>
+            <option value="stationary">Stationary</option>
+            <option value="cricket-ground">Cricket Ground</option>
+        </select>
+
+        <label for="destination">Destination:</label>
+        <select id="destination">
+            <option value="">Select Destination</option>
+            <option value="main-gate">Main Gate</option>
+            <option value="a-block">A-Block</option>
+            <option value="b-block">B-Block</option>
+            <option value="c-block">C-Block</option>
+            <option value="canteen">Canteen</option>
+            <option value="auditorium">Auditorium</option>
+            <option value="boys-hostel">Boys Hostel</option>
+            <option value="girls-hostel">Girls Hostel</option>
+            <option value="admin-block">Admin Block</option>
+            <option value="stationary">Stationary</option>
+            <option value="cricket-ground">Cricket Ground</option>
+        </select>
+
+        <button onclick="findRoute()">Find Route</button>
+    </div>
+
+    <div class="map-container">
+        <img id="campus-map" src="file:///C:/Users/Deepu/OneDrive/Desktop/sowji/vjaya-1/blueprint.jpeg" alt="Campus Map">
+        <canvas id="route-canvas"></canvas>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
